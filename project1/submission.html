@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS 144 Project Submission</title>
+		<style type="text/css">
+			body {
+				background: #f8f8f8;
+			}
+			form {
+				margin: 0 auto;
+				width: 200px;
+				border: 1px solid #ccc;
+				padding: 2em;
+			}
+			input {
+				margin: .5em 0;
+				padding: 1em;
+			}
+		</style>.
+	</head>
+	<body>
+		<form method="POST"  enctype="multipart/form-data" action="http://oak.cs.ucla.edu/cs144/projects/project1/submit/">
+			<input type="text" name="sid" placeholder="sid">
+			<input type="text" name="email" placeholder="joebruin@ucla.edu">
+			<input type="text" name="name" placeholder="Joe Bruin">
+			<input type="file" name="file">
+			<label>Platform</label>
+			<select name="platform">
+				<option name="unknown" value="unknown">unknown</option>
+				<option name="vmware" value="vmware">vmware</option>
+				<option name="virtualbox" value="virtualbox">virtualbox</option>
+			</select>
+			<hr>
+			<input type="submit">
+			<!-- sid2 not needed -->
+		</form>
+	</body>
+</html>
